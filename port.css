@@ -19,19 +19,7 @@ body
     color: white;
 }
 
-.bgvid {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1; 
-}
-/*.about .bgvid
-{
-    filter: brightness(0.5);
-}*/
+
 .about {
   position: relative; /* Key to enable pseudo-element positioning */
   height: 100vh;
@@ -300,8 +288,6 @@ body
   z-index: 100;
   pointer-events: none;
 }
-/*https://youtube.com/shorts/HUkZxON7t1I?si=YFZMC4Co3nZgqkMY*/
-/* Styling for the 3D container */
 
 .table {
   width: 50%;
