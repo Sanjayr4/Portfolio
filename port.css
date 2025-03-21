@@ -28,13 +28,29 @@ body
     object-fit: cover;
     z-index: -1; 
 }
-.about .bgvid
+/*.about .bgvid
 {
     filter: brightness(0.5);
-}
-/*.about{
-  background-color: black;
 }*/
+.about {
+  position: relative; /* Key to enable pseudo-element positioning */
+  height: 100vh;
+  color: #fff;
+}
+
+.about::before {
+  content: "";
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('Background/Untitled design (1).gif');
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.5);
+  z-index: -1; /* Keeps background behind content */
+}
 .about h1
 {
   font-size: 15rem;
@@ -76,6 +92,10 @@ body
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: url('Background/Untitled design (2).gif');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
 }
 .tech h1
 {
@@ -99,6 +119,13 @@ body
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: animatext 2.5s linear infinite;
+}
+.certificate 
+{
+  background-image: url('Background/Untitled design (2).gif');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
 }
 
 
@@ -205,6 +232,13 @@ body
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: animatext 2.5s linear infinite;
+}
+.project
+{
+  background-image: url('Background/Untitled design (2).gif');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
 }
 
 .pcontainer 
@@ -325,6 +359,10 @@ body
 .contact
 {
   width: 100%;
+  height: 100vh;
+  background-image: url('Background/Untitled design (2).gif');
+  background-size: cover;
+  background-position: center;
   height: 100vh;
   
 }
